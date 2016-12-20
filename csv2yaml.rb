@@ -2,10 +2,10 @@ require 'csv'
 require 'yaml'
 require 'pp'
 
-#path_to_csv = 'city_code.csv'
-path_to_csv = 'city_code_special_city.csv'
-#path_to_yaml = 'city_code.yaml'
-path_to_yaml = 'city_code_special_city.yaml'
+path_to_csv = 'city_code.csv'
+#path_to_csv = 'city_code_special_city.csv'
+path_to_yaml = 'city_code.yaml'
+#path_to_yaml = 'city_code_special_city.yaml'
 
 csv = CSV.read(path_to_csv, :headers => true).map(&:to_hash)
 
